@@ -1,6 +1,25 @@
 [package]
-name = "rustingo"
-version = "0.1.0"
-edition = "2024"
+name        = "rustingo"
+version     = "0.1.0"
+edition     = "2021"
+description = """
+A lightweight, educational deep learning framework written in pure Rust.
+Implements reverse-mode automatic differentiation (autograd), a full tensor
+engine, neural network layers, and GPU device abstraction — zero external deps.
+"""
+license     = "MIT"
+keywords    = ["machine-learning", "deep-learning", "autograd", "tensor", "neural-network"]
+categories  = ["science", "mathematics"]
 
+# ─── Zero external runtime dependencies ───────────────────────────────────────
 [dependencies]
+
+[dev-dependencies]
+
+[[example]]
+name = "xor_problem"
+path = "examples/xor_problem.rs"
+
+[[example]]
+name = "linear_regression"
+path = "examples/linear_regression.rs"
